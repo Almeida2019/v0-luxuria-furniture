@@ -1,0 +1,710 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Mzansi Heritage Furniture
+* Template Author: Client-First Digital
+* Template URI: https://client-first.digital/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Client-First Digital">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="Premium South African furniture and interior design solutions" />
+  <meta name="keywords" content="south african furniture, african interior design, modern furniture south africa" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!-- Added luxury Google Fonts for breathtaking typography -->
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<title>Ubuntu Heritage - Luxury South African Furniture & Interior Design</title>
+		
+		<style>
+		/* Added custom styles for breathtaking design */
+		:root {
+			--sa-primary: #0f4c3a;
+			--sa-secondary: #d4af37;
+			--sa-accent: #c2410c;
+			--sa-earth: #7c2d12;
+			--sa-light: #f0fdf4;
+			--sa-dark: #1a1a1a;
+			--sa-gradient: linear-gradient(135deg, #0f4c3a 0%, #15803d 50%, #22c55e 100%);
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: 'Inter', sans-serif;
+			line-height: 1.6;
+			color: #333;
+			overflow-x: hidden;
+		}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+		}
+		
+		.hero {
+			background: linear-gradient(135deg, var(--sa-light) 0%, #ffffff 100%);
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.hero::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			background: url('/placeholder.svg?height=600&width=800') center/cover;
+			opacity: 0.1;
+			z-index: 1;
+		}
+		
+		.hero .container {
+			position: relative;
+			z-index: 2;
+		}
+		
+		.btn-primary {
+			background-color: var(--sa-primary);
+			border-color: var(--sa-primary);
+			transition: all 0.3s ease;
+		}
+		
+		.btn-primary:hover {
+			background-color: var(--sa-secondary);
+			border-color: var(--sa-secondary);
+			transform: translateY(-2px);
+			box-shadow: 0 8px 25px rgba(21, 128, 61, 0.3);
+		}
+		
+		.product-item {
+			transition: all 0.3s ease;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+		}
+		
+		.product-item:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 35px rgba(21, 128, 61, 0.2);
+		}
+		
+		.product-item img {
+			transition: transform 0.3s ease;
+		}
+		
+		.product-item:hover img {
+			transform: scale(1.05);
+		}
+		
+		.section-title {
+			color: var(--sa-primary);
+			position: relative;
+			padding-bottom: 15px;
+		}
+		
+		.section-title::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 60px;
+			height: 3px;
+			background: linear-gradient(90deg, var(--sa-primary), var(--sa-secondary));
+		}
+		
+		.testimonial-section {
+			background: linear-gradient(135deg, var(--sa-light) 0%, #ffffff 100%);
+		}
+		
+		.feature {
+			padding: 30px;
+			border-radius: 15px;
+			background: #ffffff;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+			transition: all 0.3s ease;
+		}
+		
+		.feature:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 30px rgba(21, 128, 61, 0.15);
+		}
+		
+		.navbar-brand {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 2rem;
+			color: var(--sa-primary) !important;
+		}
+		
+		.custom-navbar {
+			background: rgba(255, 255, 255, 0.95) !important;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+		}
+		
+		.nav-link:hover {
+			color: var(--sa-secondary) !important;
+		}
+		
+		.footer-section {
+			background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+		}
+		
+		.product-price {
+			color: var(--sa-primary);
+			font-weight: 600;
+			font-size: 1.2rem;
+		}
+		
+		.imgs-grid img {
+			border-radius: 15px;
+			box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+			transition: transform 0.3s ease;
+		}
+		
+		.imgs-grid img:hover {
+			transform: scale(1.02);
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-light fixed-top" aria-label="Ubuntu Heritage navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Ubuntu Heritage<span style="color: var(--sa-secondary);">.</span></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li><a class="nav-link" href="shop.html">Collection</a></li>
+						<li><a class="nav-link" href="about.html">Heritage</a></li>
+						<li><a class="nav-link" href="services.html">Craftsmanship</a></li>
+						<li><a class="nav-link" href="blog.html">Stories</a></li>
+						<li><a class="nav-link" href="contact.html">Connect</a></li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="#"><img src="images/user.svg" style="filter: brightness(0) invert(1);"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg" style="filter: brightness(0) invert(1);"></a></li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between align-items-center" style="min-height: 80vh;">
+						<div class="col-lg-6">
+							<div class="intro-excerpt">
+								<h1 style="font-size: 3.5rem; line-height: 1.2; margin-bottom: 2rem;">Mzansi <span class="d-block" style="color: var(--sa-secondary);">Luxury Furniture</span></h1>
+								<p class="mb-4" style="font-size: 1.2rem; line-height: 1.6;">Experience the pinnacle of South African craftsmanship. From the rolling hills of KwaZulu-Natal to the vibrant streets of Cape Town, we create furniture that tells the story of our beautiful nation with unmatched elegance and authenticity.</p>
+								<div class="d-flex gap-3">
+									<a href="" class="btn btn-primary btn-lg px-4 py-3">Explore Collection</a>
+									<a href="#" class="btn btn-outline-secondary btn-lg px-4 py-3">Watch Story</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hero-img-wrap text-center">
+								<img src="/placeholder.svg?height=500&width=600" class="img-fluid" style="border-radius: 20px; box-shadow: 0 20px 60px rgba(21, 128, 61, 0.2);">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+		<!-- Start Product Section -->
+		<div class="product-section" style="padding: 100px 0;">
+			<div class="container">
+				<div class="row">
+
+					<!-- Start Column 1 -->
+					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+						<h2 class="mb-4 section-title" style="font-size: 2.5rem;">Handcrafted with Mzansi Excellence.</h2>
+						<p class="mb-4" style="font-size: 1.1rem; line-height: 1.7;">Experience the finest South African craftsmanship using indigenous woods like Yellowwood and Stinkwood, combined with contemporary design principles that celebrate our rich cultural heritage and Ubuntu philosophy.</p>
+						<p><a href="shop.html" class="btn btn-primary btn-lg">Explore Heritage Collection</a></p>
+					</div> 
+					<!-- End Column 1 -->
+
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item d-block" href="cart.html">
+							<img src="/placeholder.svg?height=350&width=280" class="img-fluid product-thumbnail">
+							<h3 class="product-title mt-3" style="font-size: 1.4rem;">Ubuntu Heritage Chair</h3>
+							<strong class="product-price">R2,850.00</strong>
+							<p class="mt-2" style="color: #6b7280; font-size: 0.9rem;">Handcrafted Yellowwood & Leather</p>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item d-block" href="cart.html">
+							<img src="/placeholder.svg?height=350&width=280" class="img-fluid product-thumbnail">
+							<h3 class="product-title mt-3" style="font-size: 1.4rem;">Baobab Dining Collection</h3>
+							<strong class="product-price">R3,450.00</strong>
+							<p class="mt-2" style="color: #6b7280; font-size: 0.9rem;">Ndebele Patterns & Stinkwood</p>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item d-block" href="cart.html">
+							<img src="/placeholder.svg?height=350&width=280" class="img-fluid product-thumbnail">
+							<h3 class="product-title mt-3" style="font-size: 1.4rem;">Protea Executive Suite</h3>
+							<strong class="product-price">R4,750.00</strong>
+							<p class="mt-2" style="color: #6b7280; font-size: 0.9rem;">Ergonomic Design & African Accents</p>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 4 -->
+
+				</div>
+			</div>
+		</div>
+		<!-- End Product Section -->
+
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section" style="padding: 100px 0; background: var(--sa-light);">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-lg-6">
+						<h2 class="section-title" style="font-size: 2.5rem;">Why Choose Mzansi Furni</h2>
+						<p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 3rem;">We are proudly South African, supporting local artisans from Limpopo to the Western Cape. Every piece embodies the spirit of Ubuntu - we are because we are - using sustainable materials that honor our beautiful rainbow nation.</p>
+
+						<div class="row my-5">
+							<div class="col-6 col-md-6 mb-4">
+								<div class="feature text-center">
+									<div class="icon mb-3">
+										<img src="images/truck.svg" alt="Image" class="img-fluid" style="width: 50px;">
+									</div>
+									<h3 style="color: var(--sa-primary); font-size: 1.3rem;">Nationwide Delivery</h3>
+									<p>Free delivery across Mzansi from Cape Town to Polokwane, Durban to Kimberley.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6 mb-4">
+								<div class="feature text-center">
+									<div class="icon mb-3">
+										<img src="images/bag.svg" alt="Image" class="img-fluid" style="width: 50px;">
+									</div>
+									<h3 style="color: var(--sa-primary); font-size: 1.3rem;">Ubuntu Craftsmanship</h3>
+									<p>Supporting South African artisans and traditional techniques passed down through generations.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6 mb-4">
+								<div class="feature text-center">
+									<div class="icon mb-3">
+										<img src="images/support.svg" alt="Image" class="img-fluid" style="width: 50px;">
+									</div>
+									<h3 style="color: var(--sa-primary); font-size: 1.3rem;">24/7 Support</h3>
+									<p>Our customer service team speaks your language and understands your needs.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6 mb-4">
+								<div class="feature text-center">
+									<div class="icon mb-3">
+										<img src="images/return.svg" alt="Image" class="img-fluid" style="width: 50px;">
+									</div>
+									<h3 style="color: var(--sa-primary); font-size: 1.3rem;">Heritage Guarantee</h3>
+									<p>Every piece comes with our Mzansi quality guarantee and lifetime craftsmanship warranty.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="/placeholder.svg?height=600&width=500" alt="Image" class="img-fluid" style="border-radius: 20px;">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+
+		<!-- Start We Help Section -->
+		<div class="we-help-section" style="padding: 100px 0;">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<div class="imgs-grid">
+							<div class="grid grid-1"><img src="/placeholder.svg?height=350&width=280" alt="South African Interior"></div>
+							<div class="grid grid-2"><img src="/placeholder.svg?height=250&width=350" alt="African Bedroom"></div>
+							<div class="grid grid-3"><img src="/placeholder.svg?height=300&width=220" alt="SA Dining Room"></div>
+						</div>
+					</div>
+					<div class="col-lg-5 ps-lg-5">
+						<h2 class="section-title mb-4" style="font-size: 2.5rem;">We Help You Create Authentic Mzansi Interiors</h2>
+						<p style="font-size: 1.1rem; line-height: 1.7;">Our design consultants understand the soul of South African homes. We blend traditional African elements with modern functionality, creating spaces that reflect our rich cultural tapestry while meeting contemporary lifestyle needs.</p>
+
+						<ul class="list-unstyled custom-list my-4" style="font-size: 1.1rem;">
+							<li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--sa-secondary); margin-right: 10px;"></i>Authentic South African materials and Ubuntu craftsmanship</li>
+							<li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--sa-secondary); margin-right: 10px;"></i>Designs inspired by African culture and breathtaking landscapes</li>
+							<li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--sa-secondary); margin-right: 10px;"></i>Sustainable furniture using indigenous Yellowwood and Stinkwood</li>
+							<li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--sa-secondary); margin-right: 10px;"></i>Custom pieces reflecting your personal Mzansi story</li>
+						</ul>
+						<p><a href="#" class="btn btn-primary btn-lg">Start Your Journey</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End We Help Section -->
+
+		<!-- Start Popular Product -->
+		<div class="popular-product">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="/placeholder.svg?height=150&width=150" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Ubuntu Chair</h3>
+								<p>Handcrafted using traditional South African techniques with locally sourced Yellowwood.</p>
+								<p><a href="#">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="/placeholder.svg?height=150&width=150" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Baobab Dining Chair</h3>
+								<p>Elegant dining chair featuring traditional Ndebele patterns and sustainable materials.</p>
+								<p><a href="#">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="/placeholder.svg?height=150&width=150" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Protea Executive Chair</h3>
+								<p>Modern office chair combining ergonomic design with beautiful African wood accents.</p>
+								<p><a href="#">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Popular Product -->
+
+		<!-- Start Testimonial Slider -->
+		<div class="testimonial-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 mx-auto text-center">
+						<h2 class="section-title">Testimonials</h2>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="testimonial-slider-wrap text-center">
+
+							<div id="testimonial-nav">
+								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+							</div>
+
+							<div class="testimonial-slider">
+								
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;Furni transformed our Cape Town home with beautiful African-inspired furniture. The Ubuntu chair is not just furniture, it's a piece of art that tells our story. The craftsmanship is exceptional and truly represents the best of South African design.&rdquo;</p>
+												</blockquote>
+
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="/placeholder.svg?height=80&width=80" alt="Nomsa Mbeki" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Nomsa Mbeki</h3>
+													<span class="position d-block mb-3">Interior Designer, Cape Town</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;As a proud South African, I wanted furniture that reflected our heritage. Furni delivered beyond my expectations with pieces that blend traditional African elements with modern functionality. My Johannesburg office has never looked better.&rdquo;</p>
+												</blockquote>
+
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="/placeholder.svg?height=80&width=80" alt="Thabo Mthembu" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Thabo Mthembu</h3>
+													<span class="position d-block mb-3">CEO, Johannesburg</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;The quality of South African craftsmanship in every Furni piece is remarkable. From the indigenous wood selection to the traditional techniques used, you can feel the passion and heritage in every detail. Highly recommended for anyone wanting authentic African furniture.&rdquo;</p>
+												</blockquote>
+
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="/placeholder.svg?height=80&width=80" alt="Sarah van der Merwe" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Sarah van der Merwe</h3>
+													<span class="position d-block mb-3">Homeowner, Durban</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Testimonial Slider -->
+
+		<!-- Start Blog Section -->
+		<div class="blog-section">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-6">
+						<h2 class="section-title">Recent Blog</h2>
+					</div>
+					<div class="col-md-6 text-start text-md-end">
+						<a href="#" class="more">View All Posts</a>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail"><img src="/placeholder.svg?height=200&width=300" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a href="#">South African Home Design Ideas</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Lindiwe Nkomo</a></span> <span>on <a href="#">Dec 19, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail"><img src="/placeholder.svg?height=200&width=300" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a href="#">Caring for Your African Wood Furniture</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Pieter Botha</a></span> <span>on <a href="#">Dec 15, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail"><img src="/placeholder.svg?height=200&width=300" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a href="#">African Decor for Small Spaces</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Amara Okafor</a></span> <span>on <a href="#">Dec 12, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Blog Section -->	
+
+		<!-- Start Footer Section -->
+		<footer class="footer-section">
+			<div class="container relative">
+
+				<div class="sofa-img">
+					<img src="/placeholder.svg?height=250&width=350" alt="Image" class="img-fluid">
+				</div>
+
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="subscription-form">
+							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+							<form action="#" class="row g-3">
+								<div class="col-auto">
+									<input type="text" class="form-control" placeholder="Enter your name">
+								</div>
+								<div class="col-auto">
+									<input type="email" class="form-control" placeholder="Enter your email">
+								</div>
+								<div class="col-auto">
+									<button class="btn btn-primary">
+										<span class="fa fa-paper-plane"></span>
+									</button>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Ubuntu<span>.</span></a></div>
+						<p class="mb-4">Proudly South African, we create beautiful furniture that celebrates our rich heritage while embracing modern design. From Cape Town to Johannesburg, we bring authentic African craftsmanship to homes across the nation.</p>
+
+						<ul class="list-unstyled custom-social">
+							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact us</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Support</a></li>
+									<li><a href="#">Knowledge base</a></li>
+									<li><a href="#">Live chat</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">Our team</a></li>
+									<li><a href="#">Leadership</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Ubuntu Chair</a></li>
+									<li><a href="#">Baobab Dining</a></li>
+									<li><a href="#">Protea Executive</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Design by <a href="#" style="color: var(--sa-secondary);">Client-First Digital</a> Distribution By <a href="#" style="color: var(--sa-secondary);">Client-First Digital</a>  <!-- License information: https://untree.co/license/ -->
+            </p>
+						</div>
+
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
