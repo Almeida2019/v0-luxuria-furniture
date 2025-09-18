@@ -153,6 +153,36 @@
   }
 }
 
+/* Added high-specificity contrast fixes for accessibility */
+@layer components {
+  /* Fix Quick View button contrast */
+  .group:hover button[class*="absolute"][class*="bottom-4"] {
+    background-color: #d4af37 !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  /* Fix category badge contrast */
+  span[class*="inline-flex"][class*="items-center"][class*="rounded-full"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+  }
+
+  /* Alternative approach - target by content */
+  button:has([class~="Quick View"]) {
+    background-color: #d4af37 !important;
+    color: #ffffff !important;
+  }
+
+  /* Ensure all badges have proper contrast */
+  [data-badge],
+  .badge,
+  span[class*="badge"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+  }
+}
+
 /* Updated navigation styles for proper theme switching */
 @layer utilities {
   .luxury-nav {
